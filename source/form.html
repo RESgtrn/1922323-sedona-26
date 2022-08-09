@@ -42,89 +42,96 @@
       </div>
     </nav>
   </header>
-  <main class="main-container">
+  <main class="form-container">
     <h1 class="visually-hidden">Добро пожаловать в великолепную Седону</h1>
     <!-- Приветственная картинка -->
     <div class="welcome-picture">
       <img class="welcome-picture__content" alt="Приветственная картинка." src="../images/welcome-text-index.svg"
         width="282" height="214">
     </div>
-    <!-- Преимущества -->
-    <section class="benefits">
-      <div class="benefits-intro">
-        <h2 class="benefits-intro__title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
-        <p class="benefits-intro__text">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
-      </div>
-      <div class="benefits__wrapper">
-        <ol class="benefits__list">
-          <li class="benefits__panorama">
-            <figure class="benefits__figure">
-              <figcaption class="benefits__item">
-                <h3 class="caption">Настоящий городок</h3>
-                <p class="benefits__number">— №1 —</p>
-                <p class="benefits__description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
-              </figcaption>
-              <img class="benefits__picture" alt="Городской пейзаж." src="../images/photo-city-mobile.jpg" width="320"
-                height="260">
-            </figure>
-            <ul class="benefits__list benefits__list--sub">
-              <li class="benefits__item label">
-                <h4 class="caption">Жильё</h4>
-                <p class="benefits__description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
-              </li>
-              <li class="benefits__item label">
-                <h4 class="caption">Еда</h4>
-                <p class="benefits__description">Всегда заказывайте топовый фирменный бургер, вы не
-                  разочаруетесь!
-                </p>
-              </li>
-              <li class="benefits__item label">
-                <h4 class="caption">Сувениры</h4>
-                <p class="benefits__description">Не только китайского, но и настоящего местного
-                  производства!</p>
-              </li>
-            </ul>
-          </li>
-          <li class="benefits__panorama">
-            <figure>
-              <img class="benefits__picture" alt="Мост дьявола." src="../images/photo-bridge-mobile.jpg" width="320"
-                height="260">
-              <figcaption>
-                <h3 class="caption">Там есть мост дьявола</h3>
-                <p class="benefits__number">— №2 —</p>
-                <p class="benefits__description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
-              </figcaption>
-            </figure>
-          </li>
-          <li class="benefits__item">
-            <h3 class="caption">Небольшая площадь</h3>
-            <p class="benefits__number">— №3 —</p>
-            <p class="benefits__description">Все достопримечательности находятся очень близко</p>
-          </li>
-          <li class="benefits__item">
-            <h3 class="caption">Красивая дорога</h3>
-            <p class="benefits__number">— №4 —</p>
-            <p class="benefits__description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-          </li>
-          <li class="benefits__item">
-            <h3 class="caption">Мало туристов</h3>
-            <p class="benefits__number">— №5 —</p>
-            <p class="benefits__description">Большинство едет в Гранд Каньон и толпится там</p>
-          </li>
-        </ol>
-      </div>
+    <!-- Оставить отзыв-->
+    <section class="review">
+      <h2 class="review__title">Оставьте свой отзыв</h2>
+      <p class="review__description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами
+        достопримечательностях</p>
+      <form class="review__form" action="https://echo.htmlacademy.ru/" method="get">
+        <fieldset class="review-autor">
+          <legend class="review-autor__title">Представьтесь:</legend>
+          <ul class="review-list">
+            <li class="review-list__item">
+              <label class="review-list__label" for="first-name">Имя*:</label>
+              <input class="review-list__item--name" name="first-name" id="first-name" required>
+            </li>
+            <li class="review-list__item">
+              <label class="review-list__label" for="last-name">Фамилия*:</label>
+              <input class="review-list__item--name" name="last-name" id="last-name" required>
+            </li>
+            <li class="review-list__item">
+              <label class="review-list__label" for="middle-name">Отчество:</label>
+              <input class="review-list__item--name" name="middle-name" id="middle-name">
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="review-contact">
+          <legend class="review-contact__title">Контактная информация:</legend>
+          <ul class="review-list">
+            <li class="review-list__item">
+              <label class="review-list__label" for="tel-number">Контактный телефон*:</label>
+              <input class="review-list__item--contact" type="tel" name="tel-number" id="tel-number" required>
+            </li>
+            <li class="review-list__item">
+              <label class="review-list__label" for="e-mail">Электронная почта*:</label>
+              <input class="review-list__item--contact" type="email" name="email" id="e-mail" required>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="review-rate">
+          <legend class="review-rate__title">Ваше общее впечатление:</legend>
+          <ul class="review-list">
+            <li class="review-list__item">
+              <input class="review-list__item--rate" type="radio" name="rate" value="positive" id="positive" checked>
+              <label class="review-list__label" for="positive">Скорее положительное</label>
+            </li>
+            <li class="review-list__item">
+              <input class="review-list__item--rate" type="radio" name="rate" value="negative" id="negative">
+              <label class="review-list__label" for="negative">Скорее отрицательное</label>
+            </li>
+            <li class="review-list__item">
+              <input class="review-list__item--rate" type="radio" name="rate" value="doubt" id="doubt">
+              <label class="review-list__label" for="doubt">Затрудняюсь ответить</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="review-аttraction">
+          <legend class="review-аttraction__title">Посещенные достопримечательности:</legend>
+          <ul class="review-list">
+            <li class="review-list__item">
+              <input class="review-list__item--аttraction" type="checkbox" name="devils-bridge" id="devils-bridge" checked>
+              <label class="review-list__label" for="devils-bridge">Мост Дьявола</label>
+            </li>
+            <li class="review-list__item">
+              <input class="review-list__item--аttraction" type="checkbox" name="mount-bell" id="mount-bell" checked>
+              <label class="review-list__label" for="mount-bell">Гора-Колокол</label>
+            </li>
+            <li class="review-list__item">
+              <input class="review-list__item--аttraction" type="checkbox" name="slide-park" id="slide-park" checked>
+              <label class="review-list__label" for="slide-park">Слайд-парк</label>
+            </li>
+            <li class="review-list__item">
+              <input class="review-list__item--аttraction" type="checkbox" name="red-rocks" id="red-rocks">
+              <label class="review-list__label" for="red-rocks">Красные скалы</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="review-text">
+          <legend class="review-text__title">Опишите свои эмоции:</legend>
+          <label class="visually-hidden" for="comment">текст отзыва</label>
+          <input class="review-text__comment" id="comment" placeholder="Опишите подробно все свои восторги">
+        </fieldset>
+        <button class="button" type="submit">Отправить отзыв</button>
+        <span class="review__required">* — обязательные поля</span>
+      </form>
     </section>
-    <!-- Переход к каталогу отелей -->
-    <div class="search">
-      <h2 class="search__title">Заинтересовались?</h2>
-      <p class="search__description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения
-        гостиниц
-        в Седоне</p>
-      <a class="button" href="#">Найти гостиницу</a>
-    </div>
-    <!-- Карта -->
-    <map name="sedona"></map>
-    <img class="map" alt="Расположение города Седона на карте." src="../images/map-mobile.jpg" width="320" height="350">
   </main>
   <!-- Подвал -->
   <footer class="main-footer">
