@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Дмитрий Ткаченко](https://up.htmlacademy.ru/adaptive/26/user/1922323).
-* Наставник: [Роман Марченко](https://htmlacademy.ru/profile/id505487).
+* Наставник: [Кристина Новикова](https://htmlacademy.ru/profile/stina).
 
 ---
 
