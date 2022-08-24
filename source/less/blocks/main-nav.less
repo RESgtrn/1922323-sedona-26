@@ -1,5 +1,14 @@
-.main-nav {
+.main-nav__wrapper {
   margin: 0 auto;
-  width: 100%;
-  max-width: 320px;
+  width: auto;
+
+  @media (min-width: @tablet-width) {
+    width: 768px;
+  }
+}
+
+@media (min-width: @mobile-width-only) {
+  .main-nav__toggle {
+    display: none;
+  }
 }
