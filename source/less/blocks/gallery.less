@@ -2,8 +2,12 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 320px;
+  width: 500px;
   margin: 0 auto;
+
+  @media (max-width: @mobile-width-only) {
+    width: 320px;
+  }
 }
 
 .gallery__caption {
