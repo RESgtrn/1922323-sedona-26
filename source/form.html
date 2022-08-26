@@ -30,6 +30,9 @@
               Фото и видео
             </a>
           </li>
+          <li class="site-list__item site-list__item--logo">
+            <span class="visually-hidden">Логотип городка Седона</span>
+          </li>
           <li class="site-list__item site-list__item--current">
             <a class="site-list__link">
               Форма отзыва
@@ -89,7 +92,7 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset class="review-rate review__style">
+        <fieldset class="review-rate review__style review__style--grid">
           <legend class="review-rate__title review-title-style">Ваше общее впечатление:</legend>
           <ul class="review-list review-list--radio">
             <li class="review-list__item">
@@ -109,7 +112,7 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset class="review-аttraction review__style">
+        <fieldset class="review-аttraction review__style review__style--grid">
           <legend class="review-аttraction__title review-title-style">Посещенные достопримечательности:</legend>
           <ul class="review-list review-list--checkbox">
             <li class="review-list__item review-list__item--checkbox">
@@ -134,15 +137,17 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset class="review-text review__style">
+        <fieldset class="review-text review__style review__style--grid">
           <legend class="review-text__title review-title-style">Опишите свои эмоции:</legend>
           <label class="visually-hidden" for="comment">текст отзыва</label>
           <textarea class="review-text__comment" id="comment" name="comment"
             placeholder="Опишите подробно все свои восторги"></textarea>
         </fieldset>
         <div class="button">
-          <button class="button button--submit" type="submit">Отправить отзыв</button>
-          <span class="review__required">* — обязательные поля</span>
+          <button class="button button--submit" type="submit">Отправить отзыв</button>          
+        </div>
+        <div class="review__required">
+          <span class="review__required review__required--text">* — обязательные поля</span>
         </div>
       </form>
     </section>
