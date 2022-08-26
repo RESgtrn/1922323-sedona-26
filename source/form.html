@@ -64,34 +64,36 @@
           <legend class="review-title-style">Представьтесь:</legend>
           <ul class="review-list review-autor__list">
             <li class="review-list__item">
-              <label class="review-list__label" for="first-name">Имя*:</label>
-              <input class="review-list__input" name="first-name" id="first-name" value="Пётр" required>
+              <label class="review-list__label review-list__label--size" for="first-name">Имя*:</label>
+              <input class="review-list__input review-list__input--name" name="first-name" id="first-name" value="Пётр" required>
             </li>
             <li class="review-list__item">
-              <label class="review-list__label" for="last-name">Фамилия*:</label>
-              <input class="review-list__input" name="last-name" id="last-name" value="Пустота" required>
+              <label class="review-list__label review-list__label--size" for="last-name">Фамилия*:</label>
+              <input class="review-list__input review-list__input--name" name="last-name" id="last-name" value="Пустота" required>
             </li>
             <li class="review-list__item">
-              <label class="review-list__label" for="middle-name">Отчество:</label>
-              <input class="review-list__input" name="middle-name" id="middle-name" value="Викторович">
+              <label class="review-list__label review-list__label--size" for="middle-name">Отчество:</label>
+              <input class="review-list__input review-list__input--name" name="middle-name" id="middle-name" value="Викторович">
             </li>
           </ul>
         </fieldset>
+        <div class="review-contact-wrapper">
         <fieldset class="review-contact review__style">
           <legend class="review-title-style">Контактная информация:</legend>
           <ul class="review-list review-contact__list">
             <li class="review-list__item">
-              <label class="review-list__label" for="tel-number">Контактный телефон*:</label>
-              <input class="review-list__input" type="tel" name="tel-number" id="tel-number"
+              <label class="review-list__label review-list__label--size" for="tel-number">Контактный телефон*:</label>
+              <input class="review-list__input review-list__input--contact" type="tel" name="tel-number" id="tel-number"
                 placeholder="Введите телефон" required>
             </li>
             <li class="review-list__item">
-              <label class="review-list__label" for="e-mail">Электронная почта*:</label>
-              <input class="review-list__input" type="email" name="email" id="e-mail" placeholder="Введите e-mail"
+              <label class="review-list__label review-list__label--size" for="e-mail">Электронная почта*:</label>
+              <input class="review-list__input review-list__input--contact" type="email" name="email" id="e-mail" placeholder="Введите e-mail"
                 required>
             </li>
           </ul>
         </fieldset>
+        </div>
         <fieldset class="review-rate review__style review__style--grid">
           <legend class="review-rate__title review-title-style">Ваше общее впечатление:</legend>
           <ul class="review-list review-list--radio">
@@ -144,7 +146,7 @@
             placeholder="Опишите подробно все свои восторги"></textarea>
         </fieldset>
         <div class="button">
-          <button class="button button--submit" type="submit">Отправить отзыв</button>          
+          <button class="button button--submit" type="submit">Отправить отзыв</button>
         </div>
         <div class="review__required">
           <span class="review__required review__required--text">* — обязательные поля</span>

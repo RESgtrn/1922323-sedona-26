@@ -36,7 +36,7 @@
 
     @media (min-width: @desktop-width) {
       grid-template-rows: none;
-      grid-template-columns: repeat(4, 170px);
+      grid-template-columns: repeat(4, auto);
       column-gap: 64px;
     }
   }
@@ -57,7 +57,20 @@
   font-size: 18px;
   line-height: 26px;
   color: #000000;
+  margin: 0;
   padding-left: 16px;
+
+  &--name {
+    @media (min-width: @desktop-width) {
+      width: 412px;
+    }
+  }
+
+  &--contact {
+    @media (min-width: @desktop-width) {
+      width: 384px;
+    }
+  }
 
   &--checkbox {
     width: 46px;
@@ -69,6 +82,12 @@
 .review-list__label {
   color: #333333;
   padding-left: 26px;
+  text-transform: uppercase;
+
+  &--size {
+    font-size: 14px;
+    line-height: 21px;
+  }
 
   &--checkbox {
     font-style: normal;
@@ -76,5 +95,6 @@
     font-size: 18px;
     line-height: 26px;
     padding-left: 16px;
+    text-transform: capitalize;
   }
 }
