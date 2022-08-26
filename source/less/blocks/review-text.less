@@ -8,7 +8,8 @@
 .review-text__comment {
   background-color: #f2f2f2;
   border: none;
-  width: 247px;
+  width: 100%; 
+  max-width: 247px; 
   height: 150px;
   font-weight: 700;
   font-size: 18px;
@@ -17,4 +18,12 @@
   padding: 16px;
   margin: auto;
   resize: none;
+
+  @media (min-width: @tablet-width) {
+    max-width: 648px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 768px;
+  }
 }

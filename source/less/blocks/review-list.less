@@ -13,6 +13,12 @@
     @media (min-width: @tablet-width) {
       grid-template-columns: repeat(2, 280px);
     }
+
+    @media (min-width: @desktop-width) {
+      grid-template-rows: none;
+      grid-template-columns: repeat(3, 280px);
+      column-gap: 28px;
+    }
   }
 
   &--checkbox {
@@ -24,7 +30,14 @@
 
     @media (min-width: @tablet-width) {
       grid-template-columns: repeat(2, 280px);
+      grid-template-rows: repeat(2, 46px);
       column-gap: 0;
+    }
+
+    @media (min-width: @desktop-width) {
+      grid-template-rows: none;
+      grid-template-columns: repeat(4, 170px);
+      column-gap: 64px;
     }
   }
 }
@@ -38,7 +51,7 @@
 .review-list__input {
   background-color: #f2f2f2;
   border: none;
-  width: 280px;
+  width: 264px;
   height: 58px;
   font-weight: 700;
   font-size: 18px;

@@ -43,6 +43,12 @@
   text-transform: uppercase;
   color: @color-lighter-black;
   padding-bottom: 53px;
+
+  @media (max-width: @mobile-width-only) {
+    br {
+      display: none;
+    }
+  }
 }
 
 .review__style {
@@ -76,11 +82,17 @@
   }
 }
 
+.review__form {
 
-@media (min-width: @tablet-width) {
-  .review__form {
+  @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: repeat(2, 324px);
     row-gap: 48px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 480px);
+    row-gap: 56px;
   }
 }
