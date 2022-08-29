@@ -14,19 +14,19 @@
     <a class="main-header__logo" href="#">
       <img src="img/logo-phone.svg" width="185" height="96" alt="Логотип городка Седона.">
     </a>
-    <nav class="main-nav">
+    <nav class="main-nav main-nav--opened main-nav--nojs">
       <button class="main-nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item--current">
-            <a>
+          <li class="site-list__item">
+            <a class="site-list__link site-list__link--current">
               Главная
             </a>
           </li>
           <li class="site-list__item">
-            <a href="catalog.html">
+            <a class="site-list__link" href="catalog.html">
               Фото и видео
             </a>
           </li>
@@ -34,12 +34,12 @@
             <span class="visually-hidden">Логотип городка Седона</span>
           </li>
           <li class="site-list__item">
-            <a href="form.html">
+            <a class="site-list__link" href="form.html">
               Форма отзыва
             </a>
           </li>
           <li class="site-list__item">
-            <a href="https://htmlacademy.ru">
+            <a class="site-list__link" href="https://htmlacademy.ru">
               HTML Academy
             </a>
           </li>
@@ -210,6 +210,8 @@
       </div>
     </div>
   </footer>
+
+<script src="script.js"></script>
 </body>
 
 </html>
