@@ -65,6 +65,11 @@
     @media (max-width: @mobile-width-only) {
       padding-left: 67px;
     }
+
+    @media (min-width: @tablet-width) {
+      text-align: center;
+      padding-top: 128px;
+    }
   }
 
   @media (min-width: @tablet-width) {
@@ -85,6 +90,16 @@
   line-height: 26px;
   padding-top: 54px;
   color: @color-black;
+
+  @media (min-width: @tablet-width) {
+    font-size: 21px;
+  }
+
+  @media (max-width: @mobile-width-only) {
+    br {
+      display: none;
+    }
+  }
 
   &--pic {
     color: @color-white;
