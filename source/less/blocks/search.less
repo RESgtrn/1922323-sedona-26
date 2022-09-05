@@ -2,8 +2,13 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 320px;
+  align-items: center;
+  width: 284px;
   margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    width: 458px;
+  }
 }
 
 .search__title {
@@ -29,4 +34,10 @@
   text-align: center;
   color: @color-lighter-black;
   padding-bottom: 32px;
+
+  @media (max-width: @mobile-width-only) {
+    br {
+      display: none;
+    }
+  }
 }

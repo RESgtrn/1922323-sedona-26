@@ -1,0 +1,63 @@
+.label {
+  position: relative;
+
+  &--house::after {
+    position: absolute;
+    content: url("/img/icon-house.svg");
+    width: 39px;
+    height: 37px;
+    top: 25px;
+    left: 18px;
+
+    @media (min-width: @tablet-width) {
+      width: 75px;
+      height: 72px;
+      top: 60px;
+      left: 90px;
+    }
+
+    @media (min-width: @desktop-width) {
+      left: 161px;
+    }
+  }
+
+  &--burger::after {
+    position: absolute;
+    content: url("/img/icon-burger.svg");
+    width: 39px;
+    height: 37px;
+    top: 25px;
+    left: 18px;
+
+    @media (min-width: @tablet-width) {
+      width: 75px;
+      height: 72px;
+      top: 60px;
+      left: 90px;
+    }
+
+    @media (min-width: @desktop-width) {
+      left: 161px;
+    }
+  }
+
+  &--gift::after {
+    position: absolute;
+    content: url("/img/icon-gift.svg");
+    width: 39px;
+    height: 37px;
+    top: 25px;
+    left: 18px;
+
+    @media (min-width: @tablet-width) {
+      width: 75px;
+      height: 72px;
+      top: 60px;
+      left: 90px;
+    }
+
+    @media (min-width: @desktop-width) {
+      left: 161px;
+    }
+  }
+}

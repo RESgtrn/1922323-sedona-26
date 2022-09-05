@@ -7,15 +7,26 @@
   color: @color-black;
 }
 
+.hashtag__title {
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 50px;
+  }
+}
+
 .main-footer__wrapper {
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   margin-top: 38px;
-}
+  width: 100%;
+  max-width: 1200px;
 
-.hashtag__title {
-  margin: 0;
-  padding: 0;
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+  }
 }
