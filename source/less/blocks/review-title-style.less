@@ -1,4 +1,6 @@
 .review-title-style {
+  position: relative;
+  width: 320px;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -6,4 +8,14 @@
   text-align: center;
   text-transform: uppercase;
   padding: 0 0 20px 0;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 320px;
+    height: 1px;
+    background-color: #e5e5e5;
+    left: 0;
+    top: -24px;
+  }
 }
