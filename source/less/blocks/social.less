@@ -3,6 +3,10 @@
   margin-bottom: 47px;
 }
 
+.social__item {
+  background-color: @color-blue;
+}
+
 .social__list {
   display: grid;
   gap: 6px;
@@ -13,5 +17,14 @@
 }
 
 .social__icon {
+  fill: @color-blue;
   display: block;
+
+  &:hover {
+    fill: #669ec0;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
