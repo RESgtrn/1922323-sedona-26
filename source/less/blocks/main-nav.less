@@ -19,6 +19,10 @@
 @media (min-width: @mobile-width-only) {
   .main-nav__toggle {
     display: none;
+
+    &:focus {
+      outline: none;
+    }
   }
 }
 
@@ -78,6 +82,10 @@
 
   .main-nav--nojs .site-list__item {
     display: block;
+  }
+
+  &:focus {
+    outline: none;
   }
 }
 
