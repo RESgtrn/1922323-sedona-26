@@ -65,61 +65,85 @@
         <li class="gallery-list__item gallery-list__item--grid-picture">
           <div class="gallery-list-wrapper">
             <figure class="gallery-list__item gallery-list__item--picture">
-              <img class="picture" src="../img/gallery-photo-boris-mobile.jpg" width="280" height="280"
-                alt="Автомобиль едет по пустынной дороге на закате.">
-              <figcaption class="gallery-list__caption">
-                <h3 class="gallery-list__title">Неродные просторы</h3>
-                <p class="gallery-list__author">Автор фото: Борис</p>
-              </figcaption>
+              <picture>
+                <source media="(min-width: 768px)" srcset="../img/gallery-photo-boris-tablet.jpg" width="648"
+                  height="400">
+                <img class="picture" src="../img/gallery-photo-boris-mobile.jpg" width="280" height="280"
+                  alt="Автомобиль едет по пустынной дороге на закате.">
+              </picture>
+              <div class="gallery-list-wrapper__caption">
+                <figcaption class="gallery-list__caption">
+                  <h3 class="gallery-list__title">Неродные просторы</h3>
+                  <p class="gallery-list__author">Автор фото: Борис</p>
+                </figcaption>
+                <div class="like-wrapper">
+                  <span class="like-count">1350</span>
+                </div>
+              </div>
             </figure>
-            <div class="like-wrapper">
-              <span class="like-count">1350</span>
-            </div>
           </div>
         </li>
         <li class="gallery-list__item">
           <div class="gallery-list-wrapper">
             <figure class="gallery-list__item gallery-list__item--picture">
-              <img class="picture" src="../img/gallery-photo-sergey-mobile.jpg" width="280" height="280"
-                alt="Цветущий кактус на фоне гор.">
-              <figcaption class="gallery-list__caption">
-                <h3 class="gallery-list__title">Местная растительность</h3>
-                <p class="gallery-list__author">Автор фото: Сергей</p>
-              </figcaption>
+              <picture>
+                <source media="(min-width: 768px)" srcset="../img/gallery-photo-sergey-tablet.jpg" width="324"
+                  height="267">
+                <img class="picture" src="../img/gallery-photo-sergey-mobile.jpg" width="280" height="280"
+                  alt="Цветущий кактус на фоне гор.">
+              </picture>
+              <div class="gallery-list-wrapper__caption">
+                <figcaption class="gallery-list__caption">
+                  <h3 class="gallery-list__title">Местная растительность</h3>
+                  <p class="gallery-list__author">Автор фото: Сергей</p>
+                </figcaption>
+                <div class="like-wrapper">
+                  <span class="like-count">143</span>
+                </div>
+              </div>
             </figure>
-            <div class="like-wrapper">
-              <span class="like-count">143</span>
-            </div>
           </div>
         </li>
         <li class="gallery-list__item">
           <div class="gallery-list-wrapper">
             <figure class="gallery-list__item gallery-list__item--picture">
-              <img class="picture" src="../img/gallery-photo-peter-mobile.jpg" width="280" height="280"
-                alt="Дорожный серпантин в горах.">
-              <figcaption class="gallery-list__caption">
-                <h3 class="gallery-list__title">Дорога на север</h3>
-                <p class="gallery-list__author">Автор фото: Петр</p>
-              </figcaption>
+              <picture>
+                <source media="(min-width: 768px)" srcset="../img/gallery-photo-peter-tablet.jpg" width="324"
+                  height="267">
+                <img class="picture" src="../img/gallery-photo-peter-mobile.jpg" width="280" height="280"
+                  alt="Дорожный серпантин в горах.">
+              </picture>
+              <div class="gallery-list-wrapper__caption gallery-list-wrapper__caption--background">
+                <figcaption class="gallery-list__caption">
+                  <h3 class="gallery-list__title">Дорога на север</h3>
+                  <p class="gallery-list__author">Автор фото: Петр</p>
+                </figcaption>
+                <div class="like-wrapper">
+                  <span class="like-count">96</span>
+                </div>
+              </div>
             </figure>
-            <div class="like-wrapper">
-              <span class="like-count">96</span>
-            </div>
           </div>
         </li>
         <li class="gallery-list__item">
           <div class="gallery-list-wrapper">
             <figure class="gallery-list__item gallery-list__item--picture">
-              <img class="picture" src="../img/gallery-photo-anton-mobile.jpg" width="280" height="280"
-                alt="Мост Дьявола.">
-              <figcaption class="gallery-list__caption">
-                <h3 class="gallery-list__title">Мост дьявола</h3>
-                <p class="gallery-list__author">Автор фото: Антон</p>
-              </figcaption>
+              <picture>
+                <source media="(min-width: 768px)" srcset="../img/gallery-photo-anton-tablet.jpg" width="324"
+                  height="267">
+                <img class="picture" src="../img/gallery-photo-anton-mobile.jpg" width="280" height="280"
+                  alt="Мост Дьявола.">
+              </picture>
+              <div class="gallery-list-wrapper__caption">
+                <figcaption class="gallery-list__caption">
+                  <h3 class="gallery-list__title">Мост дьявола</h3>
+                  <p class="gallery-list__author">Автор фото: Антон</p>
+                </figcaption>
+                <div class="like-wrapper">
+                  <span class="like-count">254</span>
+                </div>
+              </div>
             </figure>
-            <div class="like-wrapper">
-              <span class="like-count">254</span>
-            </div>
           </div>
         </li>
       </ul>
@@ -131,7 +155,7 @@
           <p class="promo-video__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в
             очередной раз!</p>
         </figcaption>
-        <video src="" poster="/img/video-poster.jpg" width="280">
+        <video class="promo-video__content" src="" poster="/img/video-poster.jpg" width="280">
           <p>Промо-видео о Седоне</p>
         </video>
       </figure>
