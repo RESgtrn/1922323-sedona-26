@@ -50,9 +50,12 @@
   <main class="form-container">
     <h1 class="visually-hidden">Добро пожаловать в великолепную Седону</h1>
     <!-- Приветственная картинка -->
-    <div class="welcome-picture">
-      <img class="welcome-picture__content" alt="Приветственная картинка." src="img/sedona.svg" width="282"
-        height="214">
+    <div class="welcome-picture welcome-picture--inner">
+      <picture>
+        <source media="(min-width: 768px)" srcset="img/sedona-tablet-desktop.svg" width="460" height="80">
+        <img class="welcome-picture__content welcome-picture__content--inner" alt="Приветственная картинка." src="img/sedona.svg" width="229"
+          height="39">
+      </picture>
     </div>
     <!-- Оставить отзыв-->
     <section class="review">

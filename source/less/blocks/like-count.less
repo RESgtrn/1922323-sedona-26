@@ -5,6 +5,10 @@
   line-height: 21px;
   padding-left: 37px;
 
+  @media (min-width: @desktop-width) {
+    color: @color-white;
+  }
+
   &::after {
     position: absolute;
     content: url("/img/like-icon.svg");
@@ -12,5 +16,9 @@
     height: 21px;
     left: 0;
     bottom: 5px;
+
+    @media (min-width: @desktop-width) {
+      content: url("/img/like-icon-white.svg");
+    }
   }
 }
