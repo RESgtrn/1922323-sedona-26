@@ -1,3 +1,35 @@
 .review-аttraction {
+  position: relative;
   padding-bottom: 49px;
+
+
+  @media (min-width: @tablet-width) {
+    &::after {
+      position: absolute;
+      content: "";
+      width: 123px;
+      height: 1px;
+      background-color: #dbdbdb;
+      left: 20px;
+      top: -50px;
+
+      @media (min-width: @desktop-width) {
+        width: 280px;
+      }
+    }
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 123px;
+      height: 1px;
+      background-color: #dbdbdb;
+      right: 20px;
+      top: -50px;
+
+      @media (min-width: @desktop-width) {
+        width: 280px;
+      }
+    }
+  }
 }
