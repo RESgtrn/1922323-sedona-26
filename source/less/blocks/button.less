@@ -3,21 +3,34 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: @color-blue;
+  text-decoration: none;
+  border: none;
+  padding: 0;
 
   &--submit {
-    text-decoration: none;
     color: @color-white;
-    background-color: @color-blue;
     font-style: normal;
     font-weight: 700;
     font-size: 21px;
     line-height: 26px;
     text-transform: uppercase;
-    border: none;
     padding: 16px 33px;
 
     @media (min-width: @desktop-width) {
       padding: 16px 85px;
+    }
+
+    &:hover {
+      background-color: #669ec0;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+
+    &:disabled {
+      background-color: #e5e5e5;
     }
   }
 }
@@ -34,6 +47,18 @@
   padding: 16px 30px;
 
   @media (min-width: @tablet-width) {
-    padding: 16px 121px;
+    padding: 16px 120px;
+  }
+
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:disabled {
+    background-color: #e5e5e5;
   }
 }
