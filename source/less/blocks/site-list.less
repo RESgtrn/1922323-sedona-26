@@ -29,6 +29,10 @@
 
   @media (min-width: @tablet-width) {
     width: 100%;
+
+    &:active {
+      background-color: @color-white;
+    }
   }
 
   &--logo {
@@ -76,11 +80,13 @@
 
     &:hover {
       color: hsl(203, 47%, 66%);
-      background-color: inherit;
+      background-color: @color-white;
     }
 
     &:active {
       color: #000000;
+      opacity: 30%;
+      background-color: @color-white;
     }
   }
 }

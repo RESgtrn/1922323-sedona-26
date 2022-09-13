@@ -1,8 +1,22 @@
 .review-autor {
+  position: relative;
   padding-bottom: 64px;
+
+  @media (min-width: @tablet-width) {
+    &::after {
+      position: absolute;
+      content: "";
+      width: 1px;
+      height: 338px;
+      background-color: #dbdbdb;
+      right: 0;
+      top: -40px;
+    }
+  }
 }
 
 .review-autor__list {
+  width: 280px;
   display: grid;
   grid-template-rows: repeat(3, 79px);
   grid-template-columns: 280px;
@@ -10,6 +24,7 @@
   gap: 16px;
 
   @media (min-width: @desktop-width) {
+    width: 430px;
     grid-template-columns: 430px;
     justify-items: left;
   }

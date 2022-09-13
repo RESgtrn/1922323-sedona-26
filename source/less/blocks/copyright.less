@@ -2,9 +2,30 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 
   @media (min-width: @tablet-width) {
     padding-right: 50px;
+  }
+
+  &:hover {
+    .copyright__text {
+      color: #81b3d2;
+    }
+
+    .copyright__icon {
+      fill: #81b3d2;
+    }
+  }
+
+  &:active {
+    .copyright__text {
+      color: #b3b3b3;
+    }
+
+    .copyright__icon {
+      fill: #b3b3b3;
+    }
   }
 }
 
@@ -19,5 +40,6 @@
 }
 
 .copyright__icon {
+  fill: @color-black;
   display: block;
 }
