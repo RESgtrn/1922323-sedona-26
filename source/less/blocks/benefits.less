@@ -35,31 +35,40 @@
 }
 
 .benefits__figure {
+  display: flex;
+  flex-direction: column;
   position: relative;
   margin: 0;
   padding: 0;
 
   @media (min-width: @tablet-width) {
-    display: flex;
+    flex-direction: row;
     width: @tablet-width;
   }
 
   @media (min-width: @desktop-width) {
-    display: flex;
     width: @desktop-width;
   }
 
-  &::after {
-    display: none;
-    position: absolute;
-    content: url("/img/triangle-mobile-only.svg");
-    left: 0;
-    top: 0;
-    width: 320;
-    height: 37;
+  &--decor {
+    &::after {
+      display: none;
+      position: absolute;
+      content: url("/img/triangle-mobile-only.svg");
+      left: 0;
+      top: 0;
+      width: 320px;
+      height: 37px;
 
+      @media (max-width: @mobile-width-only) {
+        display: inline;
+      }
+    }
+  }
+
+  &--reverse {
     @media (max-width: @mobile-width-only) {
-      display: inline;
+      flex-direction: column-reverse;
     }
   }
 }
@@ -103,7 +112,7 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
-  padding-top: 54px;
+  padding-top: 27px;
   color: @color-black;
 
   @media (min-width: @tablet-width) {
@@ -118,6 +127,12 @@
 
   &--pic {
     color: @color-white;
+    padding-top: 72px;
+  }
+
+  &--pic2 {
+    color: @color-white;
+    padding-top: 40px;
   }
 
   &--subtitle {
@@ -148,8 +163,8 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
-  padding-top: 17px;
-  padding-bottom: 40px;
+  padding-top: 18px;
+  padding-bottom: 20px;
   color: @color-lighter-black;
 
   @media (min-width: @tablet-width) {
@@ -164,10 +179,17 @@
 
   &--pic {
     color: @color-white;
+    padding-bottom: 40px;
+  }
+
+  &--pic2 {
+    color: @color-white;
+    padding-bottom: 34px;
   }
 
   &--sub {
     margin: 0;
     padding-top: 16px;
+    padding-bottom: 0;
   }
 }
