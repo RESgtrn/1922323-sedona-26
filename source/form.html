@@ -6,6 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicons/icon-152.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple-icon-180x180.png">
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
 
 <body class="page__body page__body--wrapper">
@@ -53,8 +57,8 @@
     <div class="welcome-picture welcome-picture--inner">
       <picture>
         <source media="(min-width: 768px)" srcset="img/sedona-tablet-desktop.svg" width="460" height="80">
-        <img class="welcome-picture__content welcome-picture__content--inner" alt="Приветственная картинка." src="img/sedona.svg" width="229"
-          height="39">
+        <img class="welcome-picture__content welcome-picture__content--inner" alt="Приветственная картинка."
+          src="img/sedona.svg" width="229" height="39">
       </picture>
     </div>
     <!-- Оставить отзыв-->
@@ -230,6 +234,23 @@
       </div>
     </div>
   </footer>
+  <!-- Модальные окна -->
+  <div class="modal-container modal-container--closed">
+    <div class="modal-failure">
+      <h3 class="modal-failure__title">Что-то пошло <br>не так!</h3>
+      <p class="modal-failure__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+      <button class="button modal-failure__button" type="button">
+        Ok
+      </button>
+    </div>
+    <div class="modal-success">
+      <h3 class="modal-success__title">Ваш отзыв отправлен!</h3>
+      <p class="modal-success__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам.<br>В ближайшее время мы опубликуем его на сайте.</p>
+      <button class="button modal-success__button" type="button">
+        Закрыть окно
+      </button>
+    </div>
+  </div>
   <script src="js/script.js"></script>
 </body>
 
