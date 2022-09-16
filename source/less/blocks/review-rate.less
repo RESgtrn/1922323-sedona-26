@@ -9,11 +9,12 @@
       width: 123px;
       height: 1px;
       background-color: #dbdbdb;
-      left: 20px;
-      top: -35px;
+      left: 0;
+      top: -41px;
 
       @media (min-width: @desktop-width) {
         width: 280px;
+        top: -59px;
       }
     }
 
@@ -23,14 +24,25 @@
       width: 123px;
       height: 1px;
       background-color: #dbdbdb;
-      right: 20px;
-      top: -35px;
+      right: 0;
+      top: -41px;
 
       @media (min-width: @desktop-width) {
         width: 280px;
+        top: -59px;
       }
     }
 
     padding-bottom: 50px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 74px;
+  }
+}
+
+.review-rate__title {
+  @media (min-width: @desktop-width) {
+    padding-bottom: 45px;
   }
 }
