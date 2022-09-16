@@ -5,8 +5,14 @@
   line-height: 21px;
   padding-left: 37px;
 
+  @media (min-width: @tablet-width) {
+    padding-top: 5px;
+    padding-left: 32px;
+  }
+
   @media (min-width: @desktop-width) {
     color: @color-white;
+    padding-top: 0;
   }
 
   &::after {

@@ -12,12 +12,12 @@
 
 .gallery__caption {
   margin: 0;
-  padding-top: 33px;
+  padding-top: 38px;
   text-align: center;
   text-transform: uppercase;
   font-style: normal;
   font-weight: 700;
-  font-size: 21px;
+  font-size: 18px;
   line-height: 26px;
 
   @media (min-width: @tablet-width) {
@@ -32,20 +32,27 @@
 
 .gallery__description {
   margin: 0;
-  padding-top: 2em;
-  padding-bottom: 1em;
+  padding: 25px 15px 36px 15px;
   text-align: center;
   text-transform: uppercase;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 26px;
+  line-height: 21px;
+
+  br {
+    display: none;
+  }
 
   @media (min-width: @tablet-width) {
-    padding-bottom: 86px;
+    padding: 30px 20px 81px 20px;
+
+    br {
+      display: inline;
+    }
   }
 
   @media (min-width: @desktop-width) {
-    padding-bottom: 94px;
+    padding: 32px 20px 89px 20px;
   }
 }
