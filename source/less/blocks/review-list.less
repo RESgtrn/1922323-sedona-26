@@ -1,13 +1,46 @@
 .review-list {
-  padding: 0;
-  margin: 0 auto;
   list-style-type: none;
 
-  @media (min-width: @desktop-width) {
+  &--autor {
+    padding: 0;
     margin: 0;
+    width: 280px;
+    display: grid;
+    grid-template-rows: repeat(3, 79px);
+    grid-template-columns: 280px;
+    justify-items: center;
+    gap: 16px;
+
+    @media (min-width: @desktop-width) {
+      width: 430px;
+      grid-template-columns: 430px;
+      justify-items: left;
+    }
+  }
+
+  &--contact {
+    padding: 0;
+    margin: 0;
+    width: 280px;
+    display: grid;
+    grid-template-rows: repeat(2, 79px);
+    grid-template-columns: 280px;
+    justify-items: center;
+    gap: 16px;
+
+    @media (min-width: @tablet-width) {
+      margin: 0 0 0 44px;
+    }
+
+    @media (min-width: @desktop-width) {
+      grid-template-columns: 402px;
+      margin: 0 0 0 50px;
+    }
   }
 
   &--radio {
+    padding: 0;
+    margin: 0;
     display: grid;
     grid-template-rows: repeat(3, 46px);
     grid-template-columns: 280px;
@@ -16,6 +49,7 @@
 
     @media (min-width: @tablet-width) {
       grid-template-columns: repeat(2, 280px);
+      grid-template-rows: repeat(2, 46px);
     }
 
     @media (min-width: @desktop-width) {
@@ -26,6 +60,8 @@
   }
 
   &--checkbox {
+    padding: 0;
+    margin: 0;
     display: grid;
     grid-template-rows: repeat(4, 46px);
     grid-template-columns: 280px;
@@ -33,9 +69,10 @@
     gap: 16px;
 
     @media (min-width: @tablet-width) {
-      grid-template-columns: repeat(2, 280px);
+      grid-template-columns: repeat(2, 256px);
       grid-template-rows: repeat(2, 46px);
       column-gap: 0;
+      padding-left: 35px;
     }
 
     @media (min-width: @desktop-width) {
