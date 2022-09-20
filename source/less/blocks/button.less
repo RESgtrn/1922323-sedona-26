@@ -10,6 +10,7 @@
 
   &--submit {
     color: @color-white;
+    font-family: "PT Sans", sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 21px;
@@ -17,8 +18,12 @@
     text-transform: uppercase;
     padding: 16px 33px;
 
+    @media (min-width: @tablet-width) {
+      padding: 19px 77px 13px 65px;
+    }
+
     @media (min-width: @desktop-width) {
-      padding: 16px 85px;
+      padding: 19px 108px 13px 95px;
     }
 
     &:hover {
